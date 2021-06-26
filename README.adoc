@@ -4,7 +4,7 @@ ifdef::env-github[]
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
-:check-mark-caption: :white_check_mark:
+:CHECK-MARK:-caption: :white_check_mark:
 :x-caption: :x:
 endif::[]
 
@@ -79,12 +79,12 @@ Applications:
 [options="header"]
 |=======================
 | Application                                         | macOS      | Manjaro      | Ubuntu
-| https://www.docker.com/[Docker^]                    | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| https://www.dropbox.com/[Dropbox^]                  | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| https://www.mozilla.org/en-US/firefox/new/[Firefox^] | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| http://brew.sh/[Homebrew^]                          | CHECK-MARK | X          | X
-| https://slack.com/[Slack^]                          | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| https://www.vagrantup.com/[Vagrant^]                | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| https://www.docker.com/[Docker^]                    | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| https://www.dropbox.com/[Dropbox^]                  | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| https://www.mozilla.org/en-US/firefox/new/[Firefox^] | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| http://brew.sh/[Homebrew^]                          | CHECK-MARK: | X:          | X:
+| https://slack.com/[Slack^]                          | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| https://www.vagrantup.com/[Vagrant^]                | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
 |=======================
 
 
@@ -97,27 +97,28 @@ Applications:
 [options="header"]
 |===============================
 |Application      | macOS        | Manjaro      | Ubuntu
-| autoconf        | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| bash-completion | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| doxygen         | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| gettext         | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| gifsicle        | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| git             | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| go              | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| gpg             | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| hub             | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| httpie          | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| iperf           | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| libevent        | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| mcrypt          | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| nmap            | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| node            | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| nvm             | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| ssh-copy-id     | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| readline        | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| openssl         | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| pv              | CHECK-MARK | CHECK-MARK | CHECK-MARK
-| wget            | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| autoconf        | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| bash-completion | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| doxygen         | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| gettext         | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| gifsicle        | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| git             | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| go              | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| gpg             | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| hub             | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| httpie          | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| iperf           | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| libevent        | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| mcrypt          | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| nmap            | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| node            | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| nvm             | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| ssh-copy-id     | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| readline        | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| openssl         | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| pv              | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+| wget            | CHECK-MARK: | CHECK-MARK: | CHECK-MARK:
+|=======================
 
 
 My [dotfiles](https://github.com/luiscachog/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
