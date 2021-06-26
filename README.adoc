@@ -4,7 +4,7 @@ ifdef::env-github[]
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
-:CHECK-MARK:-caption: :white_check_mark:
+:check-mark-caption: :white_check_mark:
 :x-caption: :x:
 endif::[]
 
