@@ -1,0 +1,158 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:check-mark-caption: :white_check_mark:
+:x-caption: :x:
+endif::[]
+
+bootstrap-workstation
+---------------------
+
+image:static/images-bootstrap-workstation-logo.png[alt="Logo"]
+
+:toc:
+
+This playbook installs and configures most of the software I use on my workstations, currently my main device is a macOS, but also I use Manjaro and Ubuntu.
+Some things in macOS are slightly difficult to automate, so I still have a few manual installation steps, but at least it's all documented here.
+
+Installation
+~~~~~~~~~~~~
+
+There are two methods to use this project:
+
+`bootstrap.sh`: A shell script that prepares the system to run the Ansible playbook, and then runs the Ansible playbook on your system.
+`bootstrap.yml`: The base playbook I sue to call the Ansible roles for provisioning.
+
+`bootstrap.sh`
+~~~~~~~~~~~~~~
+
+In general, this script is going to install the pre-requisites required on each OS (macOS, Manjaro, Ubuntu), also is going to install Ansible via pip and runs the Ansible playbook `bootstrap.yml`
+
+[TIP]: For macOS, if some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
+
+- To install using the shell script you can:
++
+[source,shell]
+-----------------
+curl -s https://raw.githubusercontent.com/luiscachog/bootstrap-workstation/master/bootstrap.sh | /bin/bash
+-----------------
+
+- Or, you can clone or download this repository to your local drive.
++
+[source,shell]
+-----------------
+git clone git@github.com:luiscachog/bootstrap-workstation.git
+cd bootstrap-workstation
+/bin/bash bootstrap.sh
+-----------------
+
+
+`bootstrap.yml`
+~~~~~~~~~~~~~~~
+
+As this is the principal Ansible playbook to run, so you can run it once Ansible is installed and you can re-run it as needed.
+
+[source,shell]
+-----------------
+ansible-playbook bootstrap.yml --ask-become-pass --verbose
+-----------------
+
+Running a specific set of tagged tasks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can filter which part of the provisioning process to run by specifying a set of tags using ansible-playbook's --tags flag. The tags available are `dotfiles`, `homebrew`, `mas`, `extra-packages` and `osx`.
+
+[source,shell]
+-----------------
+ansible-playbook bootstrap.yml -K --tags "dotfiles,homebrew"
+-----------------
+
+Included Applications / Configuration (Default)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Applications:
+
+.Applications installed
+[options="header"]
+|=======================
+| Application                                          | macOS        | Manjaro      | Ubuntu
+| [Docker](https://www.docker.com/)                    | [check-mark] | [check-mark] | [check-mark]
+| [Dropbox](https://www.dropbox.com/)                  | [check-mark] | [check-mark] | [check-mark]
+| [Firefox](https://www.mozilla.org/en-US/firefox/new/) | [check-mark] | [check-mark] | [check-mark]
+| [Homebrew](http://brew.sh/)                          | [check-mark] | [x]          | [x]
+| [Slack](https://slack.com/)                          | [check-mark] | [check-mark] | [check-mark]
+| [Vagrant](https://www.vagrantup.com/)                | [check-mark] | [check-mark] | [check-mark]
+|=======================
+
+
+- [LICEcap](http://www.cockos.com/licecap/)
+- [LimeChat](http://limechat.net/mac/)
+- [MacVim](http://macvim-dev.github.io/macvim/)
+- [nvALT](http://brettterpstra.com/projects/nvalt/)
+
+.Applications installed part 2
+[options="header"]
+|===============================
+|Application      | macOS        | Manjaro      | Ubuntu
+| autoconf        | [check-mark] | [check-mark] | [check-mark]
+| bash-completion | [check-mark] | [check-mark] | [check-mark]
+| doxygen         | [check-mark] | [check-mark] | [check-mark]
+| gettext         | [check-mark] | [check-mark] | [check-mark]
+| gifsicle        | [check-mark] | [check-mark] | [check-mark]
+| git             | [check-mark] | [check-mark] | [check-mark]
+| go              | [check-mark] | [check-mark] | [check-mark]
+| gpg             | [check-mark] | [check-mark] | [check-mark]
+| hub             | [check-mark] | [check-mark] | [check-mark]
+| httpie          | [check-mark] | [check-mark] | [check-mark]
+| iperf           | [check-mark] | [check-mark] | [check-mark]
+| libevent        | [check-mark] | [check-mark] | [check-mark]
+| mcrypt          | [check-mark] | [check-mark] | [check-mark]
+| nmap            | [check-mark] | [check-mark] | [check-mark]
+| node            | [check-mark] | [check-mark] | [check-mark]
+| nvm             | [check-mark] | [check-mark] | [check-mark]
+| ssh-copy-id     | [check-mark] | [check-mark] | [check-mark]
+| readline        | [check-mark] | [check-mark] | [check-mark]
+| openssl         | [check-mark] | [check-mark] | [check-mark]
+| pv              | [check-mark] | [check-mark] | [check-mark]
+| wget            | [check-mark] | [check-mark] | [check-mark]
+
+
+My [dotfiles](https://github.com/luiscachog/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+
+Finally, there are a few other preferences and settings added on for various apps and services.
+
+Future additions
+~~~~~~~~~~~~~~~~
+
+Things that still need to be done manually
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It's my hope that I can get the rest of these things wrapped up into Ansible playbooks soon, but for now, these steps need to be completed manually (assuming you already have Xcode and Ansible installed, and have run this playbook).
+
+  1. Set JJG-Term as the default Terminal theme (it's installed, but not set as default automatically).
+  3. Install all the apps that aren't yet in this setup (see below).
+  4. Remap Caps Lock to Escape (requires macOS Sierra 10.12.1+).
+  5. Set trackpad tracking rate.
+  6. Set mouse tracking rate.
+  7. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
+
+Configuration to be added
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - I have vim configuration in the repo, but I still need to add the actual installation:
+    ```
+    mkdir -p ~/.vim/autoload
+    mkdir -p ~/.vim/bundle
+    cd ~/.vim/autoload
+    curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim > pathogen.vim
+    cd ~/.vim/bundle
+    git clone git://github.com/scrooloose/nerdtree.git
+    ```
+
+Author
+~~~~~~~
+
+This project was created by [Luis Cacho]](https://luiscachog.io/) (originally inspired by [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)).
