@@ -11,7 +11,7 @@ endif::[]
 bootstrap-workstation
 ---------------------
 
-image:static/images-bootstrap-workstation-logo.png[alt="Logo"]
+image:static/images/bootstrap-workstation-logo.png[alt="Logo"]
 
 :toc:
 
@@ -31,7 +31,7 @@ There are two methods to use this project:
 
 In general, this script is going to install the pre-requisites required on each OS (macOS, Manjaro, Ubuntu), also is going to install Ansible via pip and runs the Ansible playbook `bootstrap.yml`
 
-[TIP]: For macOS, if some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
+TIP: For macOS, if some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
 - To install using the shell script you can:
 +
@@ -78,13 +78,13 @@ Applications:
 .Applications installed
 [options="header"]
 |=======================
-| Application                                          | macOS        | Manjaro      | Ubuntu
-| [Docker](https://www.docker.com/)                    | [check-mark] | [check-mark] | [check-mark]
-| [Dropbox](https://www.dropbox.com/)                  | [check-mark] | [check-mark] | [check-mark]
-| [Firefox](https://www.mozilla.org/en-US/firefox/new/) | [check-mark] | [check-mark] | [check-mark]
-| [Homebrew](http://brew.sh/)                          | [check-mark] | [x]          | [x]
-| [Slack](https://slack.com/)                          | [check-mark] | [check-mark] | [check-mark]
-| [Vagrant](https://www.vagrantup.com/)                | [check-mark] | [check-mark] | [check-mark]
+| Application                                         | macOS      | Manjaro      | Ubuntu
+| https://www.docker.com/[Docker^]                    | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| https://www.dropbox.com/[Dropbox^]                  | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| https://www.mozilla.org/en-US/firefox/new/[Firefox^] | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| http://brew.sh/[Homebrew^]                          | CHECK-MARK | X          | X
+| https://slack.com/[Slack^]                          | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| https://www.vagrantup.com/[Vagrant^]                | CHECK-MARK | CHECK-MARK | CHECK-MARK
 |=======================
 
 
@@ -97,27 +97,27 @@ Applications:
 [options="header"]
 |===============================
 |Application      | macOS        | Manjaro      | Ubuntu
-| autoconf        | [check-mark] | [check-mark] | [check-mark]
-| bash-completion | [check-mark] | [check-mark] | [check-mark]
-| doxygen         | [check-mark] | [check-mark] | [check-mark]
-| gettext         | [check-mark] | [check-mark] | [check-mark]
-| gifsicle        | [check-mark] | [check-mark] | [check-mark]
-| git             | [check-mark] | [check-mark] | [check-mark]
-| go              | [check-mark] | [check-mark] | [check-mark]
-| gpg             | [check-mark] | [check-mark] | [check-mark]
-| hub             | [check-mark] | [check-mark] | [check-mark]
-| httpie          | [check-mark] | [check-mark] | [check-mark]
-| iperf           | [check-mark] | [check-mark] | [check-mark]
-| libevent        | [check-mark] | [check-mark] | [check-mark]
-| mcrypt          | [check-mark] | [check-mark] | [check-mark]
-| nmap            | [check-mark] | [check-mark] | [check-mark]
-| node            | [check-mark] | [check-mark] | [check-mark]
-| nvm             | [check-mark] | [check-mark] | [check-mark]
-| ssh-copy-id     | [check-mark] | [check-mark] | [check-mark]
-| readline        | [check-mark] | [check-mark] | [check-mark]
-| openssl         | [check-mark] | [check-mark] | [check-mark]
-| pv              | [check-mark] | [check-mark] | [check-mark]
-| wget            | [check-mark] | [check-mark] | [check-mark]
+| autoconf        | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| bash-completion | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| doxygen         | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| gettext         | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| gifsicle        | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| git             | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| go              | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| gpg             | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| hub             | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| httpie          | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| iperf           | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| libevent        | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| mcrypt          | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| nmap            | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| node            | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| nvm             | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| ssh-copy-id     | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| readline        | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| openssl         | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| pv              | CHECK-MARK | CHECK-MARK | CHECK-MARK
+| wget            | CHECK-MARK | CHECK-MARK | CHECK-MARK
 
 
 My [dotfiles](https://github.com/luiscachog/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
