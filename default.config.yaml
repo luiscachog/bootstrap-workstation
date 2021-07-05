@@ -1,0 +1,267 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_osx: true
+configure_osx_terminal: true
+# Set to 'true' to configure the Dock via docklib.
+configure_osx_dock: false
+
+osx_dockitems_remove: []
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
+osx_dockitems_install: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/luiscachog/dotfiles
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/workspace/repos/personal/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - ack
+  - amazon-ecs-cli
+  - ansible-lint
+  - argocd
+  - asciidoc
+  - asciidoctor
+  - aspell
+  - autoconf
+  - automake
+  - aws/tap/aws-sam-cli
+  - awscli
+  - bash-completion
+  - buku
+  - checkov
+  - cmake
+  - cmatrix
+  - coreutils
+  - diff-so-fancy
+  - dive
+  - docker-compose
+  - docker-compose-completion
+  - docker-credential-helper
+  - doxygen
+  - exercism
+  - expect
+  - flake8
+  - fzf
+  - gawk
+  - gcc
+  - gettext
+  - gh
+  - gifsicle
+  - git
+  - git-lfs
+  - gitbatch
+  - gitlint
+  - glib
+  - go
+  - gpg
+  - hashicorp/tap/consul
+  - hashicorp/tap/nomad
+  - hashicorp/tap/packer
+  - hashicorp/tap/terraform
+  - hashicorp/tap/vault
+  - htop
+  - httpie
+  - hugo
+  - imath
+  - imagemagick
+  - iperf
+  - jid
+  - jq
+  - k9s
+  - kind
+  - libevent
+  - libiconv
+  - libvirtx
+  - lolcat
+  - lua
+  - markdownlint-cli
+  - mcrypt
+  - neofetch
+  - neovim
+  - nmap
+  - node
+  - noobaa/noobaa/noobaa
+  - nvm
+  - openssl
+  - operator-sdk
+  - podman
+  - postgresql
+  - pre-commit
+  - pstree
+  - pv
+  - pyenv
+  - pyenv-virtualenvwrapper
+  - readline
+  - scc
+  - shellcheck
+  - shfmt
+  - siege
+  - skopeo
+  - ssh-copy-id
+  - sshuttle
+  - talisman
+  - terraform-docs
+  - terragrunt
+  - tflint
+  - tfsec
+  - tig
+  - tmux
+  - tmuxinator
+  - tree
+  - watch
+  - wget
+  - wrk
+  - xz
+  - yamllint
+  - yq
+  - zlib
+  - zsh
+  - zsh-history-substring-search
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - aws/tap
+  - hashicorp/tap
+  - homebrew/bundle
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/cask-fonts
+  - homebrew/core
+  - homebrew/services
+  - noobaa/noobaa"
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - 1password-cli
+  - alacritty
+  - alfred
+  - alt-tab
+  - balenaetcher
+  - bettertouchtool
+  - calibre
+  - cheatsheet
+  - choosy
+  - coconutbattery
+  - coteditor
+  - dash
+  - discord
+  - docker
+  - drawio
+  - dropbox
+  - fantastical
+  - firefox
+  - font-fira-code
+  - font-fira-code-nerd-font
+  - font-hack-nerd-font
+  - gimp
+  - gitkraken
+  - hyper
+  - iina
+  - inkscape
+  - keybase
+  - libreoffice-language-pack
+  - libreoffice
+  - licecap
+  - logitech-camera-settings
+  - logitech-firmwareupdatetool
+  - logitech-options
+  - microsoft-edge
+  - microsoft-outlook
+  - microsoft-teams
+  - mindforger
+  - moom
+  - ngrok
+  - notion
+  - numi
+  - postman
+  - private-internet-access
+  - raindropio
+  - rambox
+  - ringcentral
+  - slack
+  - spotify
+  - spyder
+  - sublime-text
+  - telegram-desktop
+  - textual
+  - the-unarchiver
+  - vagrant
+  - virtualbox
+  - virtualbox-extension-pack
+  - visual-studio-code
+  - vivaldi
+  - webex-meetings
+  - whatsapp
+  - wireshark
+  - zoom
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+sublime_base_path: '~/Library/Application Support/Sublime Text'
+sublime_config_path: "Packages/User"
+sublime_package_control:
+  - "DocBlockr"
+  - "Dockerfile Syntax Highlighting"
+  - "FileDiffs"
+  - "GitHub Flavored Markdown Preview"
+  - "Jinja2"
+  - "Package Control"
+  - "PHP-Twig"
+  - "Pretty JSON"
+  - "SublimeLinter"
+  - "SublimeLinter-contrib-yamllint"
+  - "TrailingSpaces"
+  - "WordCount"
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []

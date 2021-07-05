@@ -75,7 +75,7 @@ Included Applications / Configuration (Default)
 
 Applications:
 
-.Applications installed
+.GUI Applications installed
 [options="header"]
 |=======================
 | Application                                         | macOS  | Manjaro | Ubuntu
@@ -85,6 +85,14 @@ Applications:
 | http://brew.sh/[Homebrew^]                          | CHECK: | X:      | X:
 | https://slack.com/[Slack^]                          | CHECK: | CHECK:  | CHECK:
 | https://www.vagrantup.com/[Vagrant^]                | CHECK: | CHECK:  | CHECK:
+| https://www.displaylink.com/[Display Link^]         | CHECK: | X:      | CHECK:
+| https://manytricks.com/moom/[Moom^]                 | CHECK: | X:      | X:
+| https://www.alfredapp.com/[Alfred^]                 | CHECK: | X:      | X:
+| https://www.privateinternetaccess.com/[PIA^]        | CHECK: | CHECK:  | CHECK:
+| https://keybase.io/[Keybase^]                       | CHECK: | CHECK:  | CHECK:
+| https://alt-tab-macos.netlify.app/[Alt-Tab^]        | CHECK: | X:      | X:
+| https://www.libreoffice.org/[LibreOffice^]            | CHECK: | CHECK:  | CHECK:
+
 |=======================
 
 
@@ -96,28 +104,31 @@ Applications:
 .Applications installed part 2
 [options="header"]
 |===============================
-|Application      | macOS  | Manjaro | Ubuntu
-| autoconf        | CHECK: | CHECK:  | CHECK:
-| bash-completion | CHECK: | CHECK:  | CHECK:
-| doxygen         | CHECK: | CHECK:  | CHECK:
-| gettext         | CHECK: | CHECK:  | CHECK:
-| gifsicle        | CHECK: | CHECK:  | CHECK:
-| git             | CHECK: | CHECK:  | CHECK:
-| go              | CHECK: | CHECK:  | CHECK:
-| gpg             | CHECK: | CHECK:  | CHECK:
-| hub             | CHECK: | CHECK:  | CHECK:
-| httpie          | CHECK: | CHECK:  | CHECK:
-| iperf           | CHECK: | CHECK:  | CHECK:
-| libevent        | CHECK: | CHECK:  | CHECK:
-| mcrypt          | CHECK: | CHECK:  | CHECK:
-| nmap            | CHECK: | CHECK:  | CHECK:
-| node            | CHECK: | CHECK:  | CHECK:
-| nvm             | CHECK: | CHECK:  | CHECK:
-| ssh-copy-id     | CHECK: | CHECK:  | CHECK:
-| readline        | CHECK: | CHECK:  | CHECK:
-| openssl         | CHECK: | CHECK:  | CHECK:
-| pv              | CHECK: | CHECK:  | CHECK:
-| wget            | CHECK: | CHECK:  | CHECK:
+|Application                   | macOS  | Manjaro | Ubuntu
+| autoconf                     | CHECK: | CHECK:  | CHECK:
+| bash-completion              | CHECK: | CHECK:  | CHECK:
+| doxygen                      | CHECK: | CHECK:  | CHECK:
+| gettext                      | CHECK: | CHECK:  | CHECK:
+| gifsicle                     | CHECK: | CHECK:  | CHECK:
+| git                          | CHECK: | CHECK:  | CHECK:
+| gh                           | CHECK: | CHECK:  | CHECK:
+| go                           | CHECK: | CHECK:  | CHECK:
+| gpg                          | CHECK: | CHECK:  | CHECK:
+| hub                          | CHECK: | CHECK:  | CHECK:
+| httpie                       | CHECK: | CHECK:  | CHECK:
+| iperf                        | CHECK: | CHECK:  | CHECK:
+| libevent                     | CHECK: | CHECK:  | CHECK:
+| mcrypt                       | CHECK: | CHECK:  | CHECK:
+| nmap                         | CHECK: | CHECK:  | CHECK:
+| node                         | CHECK: | CHECK:  | CHECK:
+| nvm                          | CHECK: | CHECK:  | CHECK:
+| ssh-copy-id                  | CHECK: | CHECK:  | CHECK:
+| readline                     | CHECK: | CHECK:  | CHECK:
+| openssl                      | CHECK: | CHECK:  | CHECK:
+| pv                           | CHECK: | CHECK:  | CHECK:
+| wget                         | CHECK: | CHECK:  | CHECK:
+| wrk                          | CHECK: | CHECK:  | CHECK:
+| zsh-history-substring-search | CHECK: | CHECK:  | CHECK:
 |===============================
 
 My [dotfiles](https://github.com/luiscachog/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
