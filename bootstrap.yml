@@ -13,8 +13,13 @@
 
   roles:
     - role: elliotweiser.osx-command-line-tools
+      tags: ['macos']
       when: ansible_os_family == 'Darwin'
 
     - role: geerlingguy.mac.homebrew
-      tags: ['homebrew']
+      tags: ['macos', 'homebrew']
+      when: ansible_os_family == 'Darwin'
+
+    - role: geerlingguy.mac.mas
+      tags: ['macos', 'mas']
       when: ansible_os_family == 'Darwin'
