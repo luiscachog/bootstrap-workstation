@@ -231,6 +231,7 @@ mas_installed_apps:
   - { id: 897118787, name: "Shazam" }
 mas_email: ""
 mas_password: ""
+mas_upgrade_all_apps: true
 
 osx_script: "~/.osx --no-restart"
 
