@@ -14,6 +14,8 @@ LOGFILE=$SOURCE_DIR/bootstrap-workstation.log
 GITHUB_USERNAME="luiscachog"
 GITHUB_REPOSITORY_NAME="bootstrap-workstation"
 GITHUB_REPOSITORY_BRANCH="devel"
+
+PYTHON_VERSION=3.8
 #
 # Clean display function
 #
@@ -26,6 +28,7 @@ function display() {
 
 
 echo "Starting log" >> $LOGFILE
+export PATH="$PATH:$HOME/Library/Python/$PYTHON_VERSION/bin"
 
 echo -n "Installing pre-requisites... " >> $LOGFILE
 if $(xcode-select --install 1>/dev/null 2>&1);
