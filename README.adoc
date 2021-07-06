@@ -262,6 +262,18 @@ Applications:
 | zsh-history-substring-search | CHECK: | CHECK:  | CHECK:
 |===============================
 
+.GUI Applications installed
+[options="header"]
+|=======================
+| Application                                         | macOS
+| Meeter
+| ReadKit
+| Annotate
+| Todoist
+| Spark
+| Amphetamine
+|===============================
+
 My [dotfiles](https://github.com/luiscachog/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
