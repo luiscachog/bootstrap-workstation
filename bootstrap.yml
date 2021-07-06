@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: macbook
 
   var_files:
     - default.config.yml
