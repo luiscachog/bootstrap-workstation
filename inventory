@@ -1,8 +1,2 @@
-[macbook]
-localhost ansible_connection=local
-
-[ubuntu]
-localhost ansible_connection=local
-
-[manjaro]
-localhost ansible_connection=local
+[all]
+127.0.0.1 ansible_connection=local
