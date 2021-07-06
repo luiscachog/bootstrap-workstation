@@ -92,7 +92,56 @@ Applications:
 | https://keybase.io/[Keybase^]                       | CHECK: | CHECK:  | CHECK:
 | https://alt-tab-macos.netlify.app/[Alt-Tab^]        | CHECK: | X:      | X:
 | https://www.libreoffice.org/[LibreOffice^]            | CHECK: | CHECK:  | CHECK:
-
+| balenaetcher
+| bettertouchtool
+| calibre
+| cheatsheet
+| choosy
+| coteditor
+| dash
+| discord
+| drawio
+| fantastical
+| font-fira-code
+| font-fira-code-nerd-code
+| font-hack-nerd-font
+| gimp
+| gitkraken
+| hyper
+| iina
+| inkscape
+| keybase
+| libreoffice-language-pack
+| libreoffice
+| logitech-camera-settings
+| logitech-firmwareupdatetool
+| logitech-options
+| microsoft-edge
+| microsoft-outlook
+| microsoft-teams
+| mindforger
+| moom
+| ngrok
+| notion
+| numi
+| postman
+| private-internet-access
+| raindropio
+| rambox
+| ringcentral
+| spotify
+| telegram-desktop
+| textual
+| spyder
+| the-unarchiver
+| virtualbox
+| virtualbox-extension-pack
+| visual-studio-code
+| vivaldi
+| webex-meetings
+| whatsapp
+| wireshark
+| zoom
 |=======================
 
 
@@ -105,29 +154,111 @@ Applications:
 [options="header"]
 |===============================
 |Application                   | macOS  | Manjaro | Ubuntu
-| autoconf                     | CHECK: | CHECK:  | CHECK:
+| 1password
+| 1password-cli
+| ack
+| alacritty
+| alt-tab
+| amazon-ecs-cli
+| ansible-lint
+| argocd
+| asciidoc
+| asciidoctor
+| aspell
+| autoconf
+| automake
+| aws/tap/aws-sam-cli
+| awscli          | CHECK: | CHECK:  | CHECK:
 | bash-completion              | CHECK: | CHECK:  | CHECK:
+| buku
+| checkov
+| cmake
+| cmatrix
+| coreutils
+| diff-so-fancy
+| dive
+| docker-compose
+| docker-compose-completion
+| docker-credential-helper
 | doxygen                      | CHECK: | CHECK:  | CHECK:
+| exercism
+| expect
+| flake8
+| fzf
+| gawk
+| gcc
 | gettext                      | CHECK: | CHECK:  | CHECK:
+| gh
 | gifsicle                     | CHECK: | CHECK:  | CHECK:
 | git                          | CHECK: | CHECK:  | CHECK:
-| gh                           | CHECK: | CHECK:  | CHECK:
+| git-lfs                           | CHECK: | CHECK:  | CHECK:
+| gitbatch
+| gitlint
+| glib
 | go                           | CHECK: | CHECK:  | CHECK:
 | gpg                          | CHECK: | CHECK:  | CHECK:
-| hub                          | CHECK: | CHECK:  | CHECK:
+| hashicorp/tap/consul
+| hashicorp/tap/nomad
+| hashicorp/tap/packer
+| hashicorp/tap/terraform
+| hashicorp/tap/vault
+| htop                          | CHECK: | CHECK:  | CHECK:
 | httpie                       | CHECK: | CHECK:  | CHECK:
+| hugo
+| imath
+| imagemagick
 | iperf                        | CHECK: | CHECK:  | CHECK:
+| jid
+| jq
+| k9s
+| kind
 | libevent                     | CHECK: | CHECK:  | CHECK:
+| libiconv
+| libvirt
+| lolcat
+| lua
+| markdownlint-cli
 | mcrypt                       | CHECK: | CHECK:  | CHECK:
+| neofetch
+| neovim
 | nmap                         | CHECK: | CHECK:  | CHECK:
 | node                         | CHECK: | CHECK:  | CHECK:
+| noobaa
 | nvm                          | CHECK: | CHECK:  | CHECK:
+| openssl
+| operator-sdk
+| podman
+| postgresql
+| pre-commit
+| pstree
+| pv
+| pyenv
+| pyenv-virtualenvwrapper
+| readline
+| scc
+| shellcheck
+| shfmt
+| siege
+| skopeo
 | ssh-copy-id                  | CHECK: | CHECK:  | CHECK:
-| readline                     | CHECK: | CHECK:  | CHECK:
-| openssl                      | CHECK: | CHECK:  | CHECK:
-| pv                           | CHECK: | CHECK:  | CHECK:
+| sshuttle
+| talisman                     | CHECK: | CHECK:  | CHECK:
+| terraform-docs                      | CHECK: | CHECK:  | CHECK:
+| terragrunt                           | CHECK: | CHECK:  | CHECK:
+| tflint
+| tfsec
+| tig
+| tmux
+| tmuxinator
+| tree
+| watch
 | wget                         | CHECK: | CHECK:  | CHECK:
 | wrk                          | CHECK: | CHECK:  | CHECK:
+| xz
+| yamllint
+| yq
+| zlib
+| zsh
 | zsh-history-substring-search | CHECK: | CHECK:  | CHECK:
 |===============================
 
