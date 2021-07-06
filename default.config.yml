@@ -16,7 +16,7 @@ dockitems_remove:
   - Calendar
   - Music
   - News
-dockitems_install: []
+dockitems_install:
   - name: "Launchpad"
     path: "/Applications/Launchpad.app/"
     pos: 1
