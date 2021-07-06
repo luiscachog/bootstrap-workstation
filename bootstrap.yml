@@ -23,3 +23,7 @@
     - role: geerlingguy.mac.mas
       tags: ['macos', 'mas']
       when: ansible_os_family == 'Darwin'
+
+    - role: geerlingguy.mac.dock
+      tags: ['dock']
+      when: ansible_os_family == 'Darwin' and configure_dock
