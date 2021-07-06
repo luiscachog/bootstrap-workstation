@@ -79,7 +79,7 @@ echo OK >> $LOGFILE
 
 echo "Bootstraping Workstation... " >> $LOGFILE
 cd $DESTINATION_DIR/$GITHUB_REPOSITORY_NAME-$GITHUB_REPOSITORY_BRANCH
-ansible-playbook $PLAYBOOK_FILE -v >> $LOGFILE
+ansible-playbook $PLAYBOOK_FILE -v --ask-become-pass >> $LOGFILE
 SORTIDA=$?
 echo OK >> $LOGFILE
 
