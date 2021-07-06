@@ -150,7 +150,7 @@ homebrew_taps:
   - homebrew/cask-fonts
   - homebrew/core
   - homebrew/services
-  - noobaa/noobaa"
+  - noobaa/noobaa
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
