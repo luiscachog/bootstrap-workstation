@@ -64,10 +64,16 @@ curl -s -LJ https://github.com/$GITHUB_USERNAME/$GITHUB_REPOSITORY_NAME/archive/
 SORTIDA=$?
 echo OK >> $LOGFILE
 
-echo -n "Uncompressing update... " >> $LOGFILE
+echo -n "Uncompressing repository... " >> $LOGFILE
 cd $DESTINATION_DIR
 unzip $PLAYBOOK_ZIP
 rm $PLAYBOOK_ZIP
+SORTIDA=$?
+echo OK >> $LOGFILE
+
+echo "Installing Ansible Galaxy Roles... " >> $LOGFILE
+cd $DESTINATION_DIR/$GITHUB_REPOSITORY_NAME-$GITHUB_REPOSITORY_BRANCH
+ansible-galaxy install -r requirements.yml
 SORTIDA=$?
 echo OK >> $LOGFILE
 
