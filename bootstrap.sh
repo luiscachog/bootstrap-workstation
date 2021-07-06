@@ -40,13 +40,13 @@ if [ ! $(which pip) ]
 then
     sudo easy_install pip
 fi
-pip install --upgrade pip
+pip3 install --upgrade pip --user
 
 SORTIDA=$?
 echo OK >> $LOGFILE
 
 echo -n "Installing Ansible... " >> $LOGFILE
-pip install --upgrade ansible
+pip install --upgrade ansible=2.10.7 --user
 SORTIDA=$?
 echo OK >> $LOGFILE
 
