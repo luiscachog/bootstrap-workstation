@@ -46,7 +46,7 @@ SORTIDA=$?
 echo OK >> $LOGFILE
 
 echo -n "Installing Ansible... " >> $LOGFILE
-pip install --upgrade ansible=2.10.7 --user
+pip install --upgrade ansible==2.10.7 --user
 SORTIDA=$?
 echo OK >> $LOGFILE
 
