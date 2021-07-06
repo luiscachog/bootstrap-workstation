@@ -96,6 +96,7 @@ homebrew_installed_packages:
   - lolcat
   - lua
   - markdownlint-cli
+  - mas
   - mcrypt
   - neofetch
   - neovim

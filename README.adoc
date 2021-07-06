@@ -218,6 +218,7 @@ Applications:
 | lolcat
 | lua
 | markdownlint-cli
+| mas
 | mcrypt                       | CHECK: | CHECK:  | CHECK:
 | neofetch
 | neovim
