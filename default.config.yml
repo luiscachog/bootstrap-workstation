@@ -59,8 +59,8 @@ dockitems_persist:
   - name: "Contacts"
     path: "/Applications/Contacts.app/"
     pos: 14
-  - name: "Facetime"
-    path: "/Applications/Facetime.app/"
+  - name: "FaceTime"
+    path: "/Applications/FaceTime.app/"
     pos: 15
   - name: "Spotify"
     path: "/Applications/Spotify.app/"
@@ -123,6 +123,7 @@ homebrew_installed_packages:
   - cmake
   - cmatrix
   - coreutils
+  - cyberduck
   - diff-so-fancy
   - dive
   - docker-compose
@@ -132,6 +133,9 @@ homebrew_installed_packages:
   - exercism
   - expect
   - flake8
+  - font-overpass
+  - font-overpass-mono
+  - font-overpass-nerd-font
   - fzf
   - gawk
   - gcc
@@ -142,9 +146,11 @@ homebrew_installed_packages:
   - git-lfs
   - gitbatch
   - gitlint
+  - gitter
   - glib
   - go
   - gpg
+  - grc
   - hashicorp/tap/consul
   - hashicorp/tap/nomad
   - hashicorp/tap/packer
@@ -156,6 +162,7 @@ homebrew_installed_packages:
   - imath
   - imagemagick
   - iperf
+  - iterm2
   - jid
   - jq
   - k9s
@@ -299,6 +306,8 @@ mas_installed_apps:
   - { id: 937984704, name: "Amphetamine" }
   - { id: 405399194, name: "Kindle" }
   - { id: 897118787, name: "Shazam" }
+  - { id: 1006087419, name: "SnippetsLab" }
+  - { id: 1462114288, name: "Grammarly for Safari" }
 mas_email: ""
 mas_password: ""
 mas_upgrade_all_apps: true

@@ -172,6 +172,7 @@ Applications:
 | bash-completion              | CHECK: | CHECK:  | CHECK:
 | buku
 | checkov
+| cyberduck
 | cmake
 | cmatrix
 | coreutils
@@ -184,6 +185,9 @@ Applications:
 | exercism
 | expect
 | flake8
+| font-overpass
+| font-overpass-mono
+| font-overpass-nerd-font
 | fzf
 | gawk
 | gcc
@@ -194,9 +198,11 @@ Applications:
 | git-lfs                           | CHECK: | CHECK:  | CHECK:
 | gitbatch
 | gitlint
+| gitter
 | glib
 | go                           | CHECK: | CHECK:  | CHECK:
 | gpg                          | CHECK: | CHECK:  | CHECK:
+| grc
 | hashicorp/tap/consul
 | hashicorp/tap/nomad
 | hashicorp/tap/packer
@@ -208,6 +214,7 @@ Applications:
 | imath
 | imagemagick
 | iperf                        | CHECK: | CHECK:  | CHECK:
+| iterm2
 | jid
 | jq
 | k9s
