@@ -133,8 +133,6 @@ homebrew_installed_packages:
   - exercism
   - expect
   - flake8
-  - font-overpass
-  - font-overpass-nerd-font
   - fzf
   - gawk
   - gcc
@@ -253,6 +251,9 @@ homebrew_cask_apps:
   - font-fira-code
   - font-fira-code-nerd-font
   - font-hack-nerd-font
+  - font-overpass
+  - font-overpass-mono
+  - font-overpass-nerd-font
   - gimp
   - gitkraken
   - hyper
