@@ -204,6 +204,7 @@ homebrew_installed_packages:
   - tmux
   - tmuxinator
   - tree
+  - vim
   - watch
   - wget
   - wrk
@@ -251,9 +252,17 @@ homebrew_cask_apps:
   - font-fira-code
   - font-fira-code-nerd-font
   - font-hack-nerd-font
+  - font-inconsolata-nerd-font
+  - font-jetbrains-mono-nerd-font
+  - font-meslo-lg-nerd-font
+  - font-noto-nerd-font
   - font-overpass
-  - font-overpass-mono
   - font-overpass-nerd-font
+  - font-roboto-mono-nerd-font
+  - font-source-code-pro
+  - font-source-code-pro-for-powerline
+  - font-ubuntu
+  - font-ubuntu-nerd-font
   - gimp
   - gitkraken
   - hyper
@@ -266,6 +275,7 @@ homebrew_cask_apps:
   - logitech-camera-settings
   - logitech-firmwareupdatetool
   - logitech-options
+  - macvim
   - microsoft-edge
   - microsoft-outlook
   - microsoft-teams
