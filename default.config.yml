@@ -134,7 +134,6 @@ homebrew_installed_packages:
   - expect
   - flake8
   - font-overpass
-  - font-overpass-mono
   - font-overpass-nerd-font
   - fzf
   - gawk
