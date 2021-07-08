@@ -143,7 +143,6 @@ homebrew_installed_packages:
   - git-lfs
   - gitbatch
   - gitlint
-  - gitter
   - glib
   - go
   - gpg
@@ -265,6 +264,7 @@ homebrew_cask_apps:
   - font-ubuntu-nerd-font
   - gimp
   - gitkraken
+  - gitter
   - hyper
   - iina
   - inkscape
